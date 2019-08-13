@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
   const city = req.body.city
   const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${OPENWEATHER_API_KEY}`
-  console.log(url)
+  // console.log(url)
   // "Request" syntax inspired by https://gist.github.com/bmorelli25/c67347560fe7b2213fea0d32d66fa53f#file-server-js
   request(url, (err, response, body) => {
     if(err){

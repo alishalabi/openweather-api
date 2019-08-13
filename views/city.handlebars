@@ -1,4 +1,8 @@
 <h1>Weather for: {{weather.name}}</h1>
-<h2>Current Temperature: {{weather.temp}} K</h2>
-<h2>Highs: {{weather.temp_max}} K</h2>
-<h2>Lows: {{weather.temp_min}} K</h2>
+<h2>Current Temperature: {{weather.main.temp}} K</h2>
+<!-- <h2>Highs: {{weather.main.temp_max}} K</h2>
+<h2>Lows: {{weather.main.temp_min}} K</h2> -->
+<h2>Visibility: {{weather.visibility}}</h2>
+<h2>Wind Speed: {{weather.wind.speed}}</h2>
+
+<button type="button"><a href="/">Return to Search</a></button>
