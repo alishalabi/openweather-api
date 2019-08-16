@@ -5,4 +5,11 @@
 <h2>Visibility: {{weather.visibility}}</h2>
 <h2>Wind Speed: {{weather.wind.speed}}</h2>
 
+<form action="/moods" method="post">
+  <input type="hidden" name="city" value="{{weather.name}}">
+  <input type="hidden" name="temp" value={{weather.main.temp}}>
+  <input type="text" name="mood">
+  <button type="submit">Comment On Your Mood</button>
+</form>
+
 <button type="button"><a href="/">Return to Search</a></button>
